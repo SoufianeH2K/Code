@@ -5,6 +5,7 @@
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css?family=Hind:300,400&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -11982,10 +11983,6 @@ footer.footer {
   width: 100%;
 }
 
-p {
-  font-family: "times new roman", serif;
-}
-
 h1, .h1,
 h2,
 .h2,
@@ -11998,4 +11995,144 @@ h5,
 h6,
 .h6 {
   font-family: "roboto", sans-serif;
+  font-size: 20px;
+}
+
+.hero {
+  position: relative;
+  height: 472px;
+  background-image: url(../img/kwala.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero_content {
+  position: absolute;
+  top: 50%;
+  left: 10px; /* Adjust the distance from the left edge */
+  transform: translateY(-50%);
+  color: white;
+  width: 40%;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero_content {
+    padding: 5px; /* Adjusted padding for smaller screens */
+    width: 100%; /* Adjusted width for smaller screens */
+  }
+}
+h1, .h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.btn_primary {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #228b22; /* Blue color, you can change it */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 4rem;
+  width: 48rem;
+}
+
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+.accordion .accordion-item button[aria-expanded=true] {
+  border-bottom: 1px solid #ffa54f;
+}
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.accordion button:hover, .accordion button:focus {
+  cursor: pointer;
+  color: #ffa54f;
+}
+.accordion button:hover::after, .accordion button:focus::after {
+  cursor: pointer;
+  color: #ffa54f;
+  border: 1px solid #ffa54f;
+}
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.accordion button[aria-expanded=true] {
+  color: #ffa54f;
+}
+.accordion button[aria-expanded=true] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded=true] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
 }/*# sourceMappingURL=main.css.map */
