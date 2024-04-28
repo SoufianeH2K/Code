@@ -12042,6 +12042,73 @@ h1, .h1 {
   height: 400px;
 }
 
+/*
+.section__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.header p {
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+*/
+.card {
+  padding: 2rem;
+  display: grid;
+  gap: 1rem;
+  background-color: var(--extra-light);
+  border-radius: 5px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+@media (width < 900px) {
+  .testimonials__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+@media (width < 600px) {
+  .testimonials__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.reviews_section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card img {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  border-radius: 100%;
+  border: 1px solid var(--primary-color);
+}
+
+@media (width < 900px) {
+  .reviews_section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+@media (width < 600px) {
+  .reviews_section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .contact_form {
   display: flex;
   width: 100%;
