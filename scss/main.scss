@@ -72,8 +72,6 @@ h1 {
 
 // Section 2
 
-//@import url("https://fonts.googleapis.com/css?family=Hind:300,400&display=swap");
-
 $bg: #fff;
 $text: #000000;
 $gray: #4d5974;
@@ -186,82 +184,9 @@ $lightgray: #e5e5e5;
 
 // Section 3
 
-.carousel-container {
-  position: relative;
-  max-width: 600px;
-  margin: auto;
-  overflow: hidden;
-}
-
-.carousel {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.carousel img {
+.home_section img {
   width: 100%;
-}
-
-.prev,
-.next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  font-size: 18px;
-  z-index: 2;
-}
-
-.prev {
-  left: 0;
-}
-
-.next {
-  right: 0;
-}
-
-// Section 4
-
-.carousel-container-2 {
-  position: relative;
-  max-width: 600px;
-  margin: auto;
-  overflow: hidden;
-}
-
-.carousel-2 {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.carousel-2 img {
-  width: 100%;
-}
-
-.prev-2,
-.next-2 {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  font-size: 18px;
-  z-index: 2;
-}
-
-.prev-2 {
-  left: 0;
-}
-
-.next-2 {
-  right: 0;
+  height: 400px;
 }
 
 // Contact Us page

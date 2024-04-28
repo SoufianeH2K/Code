@@ -12136,80 +12136,9 @@ h1, .h1 {
   margin: 2em 0;
 }
 
-.carousel-container {
-  position: relative;
-  max-width: 600px;
-  margin: auto;
-  overflow: hidden;
-}
-
-.carousel {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.carousel img {
+.home_section img {
   width: 100%;
-}
-
-.prev,
-.next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  font-size: 18px;
-  z-index: 2;
-}
-
-.prev {
-  left: 0;
-}
-
-.next {
-  right: 0;
-}
-
-.carousel-container-2 {
-  position: relative;
-  max-width: 600px;
-  margin: auto;
-  overflow: hidden;
-}
-
-.carousel-2 {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.carousel-2 img {
-  width: 100%;
-}
-
-.prev-2,
-.next-2 {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  font-size: 18px;
-  z-index: 2;
-}
-
-.prev-2 {
-  left: 0;
-}
-
-.next-2 {
-  right: 0;
+  height: 400px;
 }
 
 .contact_form {
