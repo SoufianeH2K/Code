@@ -12031,7 +12031,7 @@ h1, .h1 {
 .btn_primary {
   padding: 10px 20px;
   font-size: 1rem;
-  background-color: #228b22; /* Blue color, you can change it */
+  background-color: #228b22;
   color: white;
   border: none;
   border-radius: 5px;
@@ -12048,7 +12048,7 @@ h1, .h1 {
 .container {
   margin: 0 auto;
   padding: 4rem;
-  width: 48rem;
+  width: 100%;
 }
 
 .accordion .accordion-item {
@@ -12135,4 +12135,26 @@ h1, .h1 {
   font-size: 1rem;
   font-weight: 300;
   margin: 2em 0;
+}
+
+.contact_form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+.contact_form_title {
+  align-self: center;
+}
+
+.small_text_input {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.text_input {
+  margin-bottom: 10px;
 }/*# sourceMappingURL=main.css.map */

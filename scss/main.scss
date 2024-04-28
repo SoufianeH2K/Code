@@ -63,7 +63,7 @@ h1 {
 .btn_primary {
   padding: 10px 20px;
   font-size: 1rem;
-  background-color: $primary; /* Blue color, you can change it */
+  background-color: $primary;
   color: white;
   border: none;
   border-radius: 5px;
@@ -91,7 +91,7 @@ $blue: #ffa54f;
 .container {
   margin: 0 auto;
   padding: 4rem;
-  width: 48rem;
+  width: 100%;
 }
 
 .accordion {
@@ -186,3 +186,27 @@ $blue: #ffa54f;
 }
 
 // Section 3
+
+// Contact Us page
+
+.contact_form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+.contact_form_title {
+  align-self: center;
+}
+
+.small_text_input {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.text_input {
+  margin-bottom: 10px;
+}
