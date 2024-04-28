@@ -5,7 +5,6 @@
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css?family=Hind:300,400&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -12055,7 +12054,7 @@ h1, .h1 {
   border-bottom: 1px solid #e5e5e5;
 }
 .accordion .accordion-item button[aria-expanded=true] {
-  border-bottom: 1px solid #ffa54f;
+  border-bottom: 1px solid #fd7e14;
 }
 .accordion button {
   position: relative;
@@ -12063,7 +12062,7 @@ h1, .h1 {
   text-align: left;
   width: 100%;
   padding: 1em 0;
-  color: #7288a2;
+  color: #000000;
   font-size: 1.15rem;
   font-weight: 400;
   border: none;
@@ -12072,12 +12071,12 @@ h1, .h1 {
 }
 .accordion button:hover, .accordion button:focus {
   cursor: pointer;
-  color: #ffa54f;
+  color: #fd7e14;
 }
 .accordion button:hover::after, .accordion button:focus::after {
   cursor: pointer;
-  color: #ffa54f;
-  border: 1px solid #ffa54f;
+  color: #fd7e14;
+  border: 1px solid #fd7e14;
 }
 .accordion button .accordion-title {
   padding: 1em 1.5em 1em 0;
@@ -12113,7 +12112,7 @@ h1, .h1 {
   background: currentColor;
 }
 .accordion button[aria-expanded=true] {
-  color: #ffa54f;
+  color: #fd7e14;
 }
 .accordion button[aria-expanded=true] .icon::after {
   width: 0;
@@ -12135,6 +12134,82 @@ h1, .h1 {
   font-size: 1rem;
   font-weight: 300;
   margin: 2em 0;
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel img {
+  width: 100%;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  z-index: 2;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.carousel-container-2 {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-2 {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-2 img {
+  width: 100%;
+}
+
+.prev-2,
+.next-2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  z-index: 2;
+}
+
+.prev-2 {
+  left: 0;
+}
+
+.next-2 {
+  right: 0;
 }
 
 .contact_form {
