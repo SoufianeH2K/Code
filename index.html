@@ -39,8 +39,11 @@
               <li class="nav-item">
                 <a class="nav-link" href="/habitats">Nos habitats</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/connection">Connexion</a>
+              <li class="nav-item" data-show="disconnected">
+                <a class="nav-link" href="/login">Connexion</a>
+              </li>
+              <li class="nav-item" data-show="connected">
+                <button class="nav-link" id="btnLogout">Déconnexion</button>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/contact">Contactez nous</a>
@@ -69,6 +72,7 @@
         <div class="col-6 col-lg-4">contact@arcadiazoo.com</div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
     <script type="module" src="Router/router.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>

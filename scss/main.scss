@@ -173,3 +173,47 @@ h1 {
 .text_input {
   margin-bottom: 10px;
 }
+
+.centered-connection-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.service-details {
+  flex: 1;
+}
+
+.service-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.service-description {
+  font-size: 1rem;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .service-image {
+    display: none;
+  }
+}
