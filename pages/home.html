@@ -380,7 +380,6 @@
           Les services du zoo sont impeccables ! Nous avons passé une journée
           fantastique en famille
         </p>
-        <img src="../img/profile pic 2.jpg" alt="user" />
         <p class="name">Mike M</p>
       </div>
     </div>
@@ -390,8 +389,7 @@
           Expérience incroyable ! Le zoo offre une variété d'habitats
           magnifiques. Les enfants ont adoré.
         </p>
-        <img src="../img/profile pic 1.jpg" alt="user" />
-        <p class="name">Pierre Machin</p>
+        <p class="name">Pierre Monais</p>
       </div>
     </div>
     <div class="card">
@@ -401,8 +399,78 @@
           engagement écologique, et programmes éducatifs captivants. Des
           installations bien entretenues et un personnel compétent.
         </p>
-        <img src="../img/profile pic 2.jpg" alt="user" />
         <p class="name">Mathieu Corea</p>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <button
+      id="add-comment-btn"
+      class="btn btn-primary text-white mt-4"
+      data-bs-toggle="modal"
+      data-bs-target="#commentModal"
+    >
+      Ajouter un avis
+    </button>
+  </div>
+
+  <div
+    class="modal fade"
+    id="commentModal"
+    tabindex="-1"
+    aria-labelledby="commentModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">
+            Ajouter votre commentaire
+          </h1>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <form id="commentsForm">
+            <div class="form-group">
+              <label for="service-name">Votre pseudo</label>
+              <input
+                type="text"
+                class="form-control"
+                id="commentsPseudo"
+                name="commentsPseudo"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="service-description">Votre commentaire</label>
+              <textarea
+                class="form-control"
+                id="commentsText"
+                name="commentsText"
+                rows="3"
+                required
+              ></textarea>
+            </div>
+            <input type="hidden" id="edit-index" />
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Fermer
+          </button>
+          <button type="button" class="btn btn-primary" id="btnAddComments">
+            Envoyer
+          </button>
+        </div>
       </div>
     </div>
   </div>
