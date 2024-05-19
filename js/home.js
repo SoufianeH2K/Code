@@ -20,7 +20,7 @@ items.forEach((item) => item.addEventListener("click", toggleAccordion));
 
 // Section : Avis
 
-const commentsContainer = document.getElementsByClassName("reviews_section");
+const commentsContainer = document.getElementById("reviewsSection");
 
 // Function to fetch comments data
 function getComments(commentsId) {
@@ -31,11 +31,36 @@ function getComments(commentsId) {
     .then((res) => {
       return res.json();
     })
-    .then((data) => console.log(data))
+    .then((data) => {
+      if (
+        data.isVisible == false ||
+        data.id === undefined ||
+        typeof data.id !== "number" ||
+        document.getElementById(`comment-row-${data.id}`)
+      ) {
+        console.log("Comment already displayed or invalid:", data);
+        return; // Skip if already displayed or invalid
+      }
+      let template = `
+                    <div class="card">
+                      <div class="card-body">
+                        <p class="card-text">
+                          ${data.commentaire}       
+                        </p>
+                        <p class="name">${data.pseudo}</p>
+                      </div>
+                    </div>
+                    `;
+      commentsContainer.insertAdjacentHTML("beforeend", template);
+      console.log(data);
+    })
+
     .catch((error) => console.error("Error fetching data:", error));
 }
 
-getComments(1);
+for (let i = 30; i >= 0; i--) {
+  getComments(i);
+}
 
 // Function to POST new comments
 
